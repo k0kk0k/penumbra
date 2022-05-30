@@ -66,7 +66,7 @@ impl Info {
         tracing::info!(?query);
 
         match query.path.as_str() {
-            "/jmt/key" => {
+            "/state/key" => {
                 let height: u64 = query.height.into();
                 let key = query.data.to_vec();
 
